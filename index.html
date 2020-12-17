@@ -1,10 +1,35 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    
-  </body>
-  <script type="text/javascript" src="main.js"></script>
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <section class="navigation">
+    <h1 class="page-title">What's for Dinner?</h1>
+    <button class="add-recipe">ADD A RECIPE</button>
+  </section>
+
+  <section class="main-page">
+    <form class="input-section">
+      <input type="radio" name="choice" id="side" value="side" checked><i>Side</i><br>
+      <input type="radio" name="choice" id="main-dish" value="main-dish" checked><i>Main Dish</i><br>
+      <input type="radio" name="choice" id="dessert" value="dessert" checked><i>Dessert</i><br>
+      <input type="radio" name="choice" id="entire-meal" value="entire-meal" checked><i>Entire Meal</i><br>
+      <button class="lets-cook">LET'S COOK</button>
+    </form>
+    <section class="output-section">
+      <img class="pot-icon" src="assets/cookpot.svg" alt="pot icon" />
+      <p class="generated-recipe"></p>
+    </section>
+  </section>
+
+
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+
 </html>
