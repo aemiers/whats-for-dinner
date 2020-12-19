@@ -1,35 +1,39 @@
 <html>
-
 <head>
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-
   <section class="navigation">
-    <h1 class="page-title">What's for Dinner?</h1>
-    <button class="add-recipe">ADD A RECIPE</button>
+    <h2 class="page-title">What's for Dinner?</h1>
+    <button class="button" id="add-recipe">ADD A RECIPE</button>
   </section>
-
   <section class="main-page">
-    <form class="input-section">
-      <input type="radio" name="choice" id="side" value="side" checked><i>Side</i><br>
-      <input type="radio" name="choice" id="main-dish" value="main-dish" checked><i>Main Dish</i><br>
-      <input type="radio" name="choice" id="dessert" value="dessert" checked><i>Dessert</i><br>
-      <input type="radio" name="choice" id="entire-meal" value="entire-meal" checked><i>Entire Meal</i><br>
-      <button class="lets-cook">LET'S COOK</button>
+    <form class="section" id="input-section">
+      <h1 class="input-title">What are you looking for?</h1>
+        <div>
+          <input type="radio" name="choice" id="side" value="side" checked>Side
+        </div>
+        <div>
+          <input type="radio" name="choice" id="main-dish" value="main-dish" checked>Main Dish
+        </div>
+        <div>
+          <input type="radio" name="choice" id="dessert" value="dessert" checked>Dessert
+        </div>
+        <div>
+          <input type="radio" name="choice" id="entire-meal" value="entire-meal" checked>Entire Meal
+        </div>
+      <button class="button" id="lets-cook">LET'S COOK</button>
     </form>
-    <section class="output-section">
+    <section class="section" id="output-section">
       <img class="pot-icon" src="assets/cookpot.svg" alt="pot icon" />
-      <p class="generated-recipe"></p>
+      <p class="output-saying hidden">You should make:</p>
+      <p class="recipe-name hidden"></p>
+      <div class="clear-button-container">
+        <button class="button hidden" id="clear-button">CLEAR</button>
+      </div>
     </section>
   </section>
-
-
-
 </body>
 <script type="text/javascript" src="main.js"></script>
-
 </html>
