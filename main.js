@@ -12,6 +12,10 @@ clearButton.addEventListener('click', clearRecipe);
 var savedRecipes = [];
 var currentRecipe;
 
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
 function generateRecipe() {
 
 }
