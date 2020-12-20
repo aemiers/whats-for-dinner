@@ -32,7 +32,7 @@ function toggleHidden(element) {
 }
 
 function deactivateReactivate(element) {
-  element.classList.toggle("disable");
+  element.classList.toggle("disabled");
 }
 
 function showHide() {
@@ -53,29 +53,11 @@ function generateRecipe() {
       recipePlaceHolder.innerText = mains[getRandomIndex(mains)];
     } else if (dessertRadio.checked) {
       recipePlaceHolder.innerText = desserts[getRandomIndex(desserts)];
-    } else if (entireMealRado.checked) {
-      generateMeal();
     }
   }
 }
-
-// function generateMeal() {
-//   recipePlaceHolder.innerHTML = `
-//   <p class="recipe-name-one"></p>
-//   <p class="recipe-name-two"></p>
-//   <p class="recipe-name-three"></p>
-//   mealOne.innerText = sides[getRandomIndex(sides)];
-//   mealTwo.innerText = mains[getRandomIndex(mains)];
-//   mealThree.innerText = desserts[getRandomIndex(desserts)];
-// }
-
 
 function clearRecipe() {
   showHide();
   deactivateReactivate(letsCookButton);
 }
-
-//
-// function addARecipe() {
-//
-// }
