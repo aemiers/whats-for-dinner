@@ -10,12 +10,8 @@ var mainDishRadio = document.querySelector("#main-dish");
 var dessertRadio = document.querySelector("#dessert");
 var entireMealRado = document.querySelector("#entire-meal");
 var userChoice = document.querySelector("#input-section");
-var mealOne = document.querySelector(".recipe-name-one");
-var mealTwo = document.querySelector(".recipe-name-two");
-var mealThree = document.querySelector(".recipe-name-three");
 
 // ~~~~~~~~~~~~~~~~~ event listeners ~~~~~~~~~~~~~~~~~~~~~~~~
-// addARecipeButton.addEventListener("click", addARecipe);
 letsCookButton.addEventListener("click", generateRecipe);
 clearButton.addEventListener("click", clearRecipe);
 
